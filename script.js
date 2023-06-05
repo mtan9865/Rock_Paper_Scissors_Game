@@ -1,4 +1,4 @@
-let choices = ["rock", "paper", "scissors"];
+let choices = ["Rock", "Paper", "Scissors"];
 let gameStats = {wins: 0, losses: 0, ties: 0};
 let player = {choice: null};
 
@@ -6,17 +6,17 @@ let computerChoiceEl = document.getElementById("computer-choice")
 let playerChoiceEl = document.getElementById("player-choice")
 
 function playRock() {
-    player.choice = "rock"
+    player.choice = "Rock"
     playGame()
 }
 
 function playPaper() {
-    player.choice = "paper"
+    player.choice = "Paper"
     playGame()
 }
 
 function playScissors() {
-    player.choice = "scissors"
+    player.choice = "Scissors"
     playGame()
 }
 
