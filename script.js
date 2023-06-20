@@ -40,15 +40,14 @@ function compareChoices(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         gameStats.ties++;
         displayMessage("It's a tie!");
-    }
-    else if (
-        (playerChoice === "rock" && computerChoice === "scissors") ||
-        (playerChoice === "paper" && computerChoice === "rock") ||
-        (playerChoice === "scissors" && computerChoice === "paper")) {
-            gameStats.wins++;
-            displayMessage("You win! " + playerChoice + " beats " + computerChoice + ".");
-        }
-    else {
+    } else if (
+        (playerChoice === "Rock" && computerChoice === "Scissors") ||
+        (playerChoice === "Paper" && computerChoice === "Rock") ||
+        (playerChoice === "Scissors" && computerChoice === "Paper")
+    ) {
+        gameStats.wins++;
+        displayMessage("You win! " + playerChoice + " beats " + computerChoice + ".");
+    } else {
         gameStats.losses++;
         displayMessage("You lose! " + computerChoice + " beats " + playerChoice + ".");
     }
